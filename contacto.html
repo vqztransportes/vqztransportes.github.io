@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VQZ Transportes</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Para iconos de teléfono y correo usamos Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="fotos/logo_sup.jpg" type="image/png" sizes="32x32">
+  <link rel="icon" href="fotos/logo_sup.jpg" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="fotos/logo_sup.jpg">
+  <link rel="shortcut icon" href="fotos/logo_sup.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <!-- Barra superior de contacto -->
+  <div class="topbar">
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i> +52 961 243 0493 / +52 961 213 4640</span>
+      <span><i class="fas fa-envelope"></i> fernandovazquez_1988@outlook.com</span>
+    </div>
+  </div>
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="fotos/logo.png" alt="Logo de VQZ Transportes">
+  </div>
+  <!-- Botón hamburguesa -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#">Contacto</a></li>
+  </ul>
+</nav>
+
+<!-- CONTACTO -->
+<section class="contacto">
+  <div class="contenedor">
+    <div class="caja">
+      <h2>Contáctanos</h2>
+      <p>Estamos para atenderte. Usa cualquiera de nuestros medios de contacto o envíanos un mensaje directo.</p>
+      
+      <div class="info-contacto">
+        <p><i class="fas fa-phone"></i> +52 961 243 0493 / +52 961 213 4640</p>
+        <p><i class="fas fa-envelope"></i> fernandovazquez_1988@outlook.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Tuxtla Gutiérrez, Chiapas, México</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo en blanco y negro -->
+      <div class="footer-logo">
+        <img src="fotos/logo blanco negro.png" alt="Logo">
+      </div>
+      <!-- Redes sociales -->
+      <div class="footer-social">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/qr/O4EM22NZJRCSK1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 VQZ Transportes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.querySelector("i").classList.toggle("fa-bars");
+    hamburger.querySelector("i").classList.toggle("fa-times");
+  });
+</script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/529612430493" class="btn-whatsapp-flotante" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
